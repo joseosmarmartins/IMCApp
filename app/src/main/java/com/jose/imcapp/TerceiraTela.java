@@ -22,7 +22,6 @@ public class TerceiraTela extends AppCompatActivity {
         imc.setText(resultado);
 
         Double imcValor = Double.parseDouble(resultado.replace("IMC = ", ""));
-
         String classificacao = "Classificação = ";
 
         if (imcValor < 16) {
