@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="17"
+        android:id="@+id/resultadoNome"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:hint="Nome" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="17"
+        android:id="@+id/resultadoTelefone"
+        android:layout_below="@+id/campoNome"
+        android:layout_alignStart="@+id/campoNome"
+        android:enabled="true"
+        android:hint="Telefone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="17"
+        android:id="@+id/resultadoEmail"
+        android:enabled="true"
+        android:hint="E-mail"
+        android:layout_below="@+id/campoTelefone"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="17"
+        android:id="@+id/resultadoAltura"
+        android:enabled="true"
+        android:hint="Altura"
+        android:layout_below="@+id/campoEmail"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="17"
+        android:id="@+id/resultadoPeso"
+        android:enabled="true"
+        android:hint="Peso"
+        android:layout_below="@+id/campoAltura"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/botaoEnviaResultado"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
