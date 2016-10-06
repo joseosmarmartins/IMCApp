@@ -2,7 +2,6 @@ package com.jose.imcapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +10,7 @@ import android.widget.EditText;
 public class SegundaTela extends AppCompatActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda_tela);
 
@@ -46,7 +45,6 @@ public class SegundaTela extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent();
-                it.putExtra("resultado", "");
 
                 EditText nome = (EditText) findViewById(R.id.resultadoNome);
                 EditText telefone = (EditText) findViewById(R.id.resultadoTelefone);
@@ -60,12 +58,10 @@ public class SegundaTela extends AppCompatActivity {
                 String campoAltura =  altura.getText().toString();
                 String campoPeso =  peso.getText().toString();
 
+                Double resultado = Double.parseDouble(campoPeso) / (Double.parseDouble(campoAltura) * Double.parseDouble(campoAltura));
+
                 Bundle bundle = new Bundle();
-                bundle.putString("campoNome", campoNome);
-                bundle.putString("campoTelefone", campoTelefone);
-                bundle.putString("campoEmail", campoEmail);
-                bundle.putString("campoAltura", campoAltura);
-                bundle.putString("campoPeso", campoPeso);
+                bundle.putString("resultado", resultado.toString());
 
                 it.putExtras(bundle);
 

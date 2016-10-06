@@ -10,7 +10,7 @@
         android:ems="17"
         android:id="@+id/resultadoNome"
         android:layout_alignParentEnd="true"
-        android:enabled="true"
+        android:enabled="false"
         android:hint="Nome" />
 
     <EditText
@@ -21,7 +21,7 @@
         android:id="@+id/resultadoTelefone"
         android:layout_below="@+id/campoNome"
         android:layout_alignStart="@+id/campoNome"
-        android:enabled="true"
+        android:enabled="false"
         android:hint="Telefone" />
 
     <EditText
@@ -30,7 +30,7 @@
         android:inputType="textEmailAddress"
         android:ems="17"
         android:id="@+id/resultadoEmail"
-        android:enabled="true"
+        android:enabled="false"
         android:hint="E-mail"
         android:layout_below="@+id/campoTelefone"
         android:layout_alignParentEnd="true" />
@@ -41,7 +41,7 @@
         android:inputType="number"
         android:ems="17"
         android:id="@+id/resultadoAltura"
-        android:enabled="true"
+        android:enabled="false"
         android:hint="Altura"
         android:layout_below="@+id/campoEmail"
         android:layout_alignParentEnd="true" />
@@ -52,7 +52,7 @@
         android:inputType="number"
         android:ems="17"
         android:id="@+id/resultadoPeso"
-        android:enabled="true"
+        android:enabled="false"
         android:hint="Peso"
         android:layout_below="@+id/campoAltura"
         android:layout_alignParentStart="true" />

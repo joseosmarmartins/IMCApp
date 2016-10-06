@@ -52,17 +52,6 @@
         android:layout_below="@+id/campoAltura"
         android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="17"
-        android:id="@+id/campoAltura"
-        android:enabled="true"
-        android:hint="Altura"
-        android:layout_below="@+id/campoEmail"
-        android:layout_alignParentEnd="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,5 +76,16 @@
         android:id="@+id/botaoCalcular"
         android:layout_below="@+id/resultado"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/campoAltura"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/campoEmail"
+        android:layout_alignEnd="@+id/campoEmail"
+        android:hint="Altura" />
 
 </RelativeLayout>
